@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.UpBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // UpBtn
+            // 
+            this.UpBtn.Location = new System.Drawing.Point(409, 210);
+            this.UpBtn.Name = "UpBtn";
+            this.UpBtn.Size = new System.Drawing.Size(94, 39);
+            this.UpBtn.TabIndex = 0;
+            this.UpBtn.Text = "UpBtn";
+            this.UpBtn.UseVisualStyleBackColor = true;
+            this.UpBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Menu
+            // 
+            this.ClientSize = new System.Drawing.Size(562, 337);
+            this.Controls.Add(this.UpBtn);
+            this.Name = "Menu";
+            this.Load += new System.EventHandler(this.Menu_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button UploadBtn;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button Testare;
+        private System.Windows.Forms.Button UpBtn;
     }
 }
 
