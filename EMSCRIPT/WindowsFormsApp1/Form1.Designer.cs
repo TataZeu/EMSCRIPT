@@ -33,19 +33,22 @@
             // 
             // UpBtn
             // 
-            this.UpBtn.Location = new System.Drawing.Point(409, 210);
+            this.UpBtn.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.UpBtn.Location = new System.Drawing.Point(364, 205);
             this.UpBtn.Name = "UpBtn";
-            this.UpBtn.Size = new System.Drawing.Size(94, 39);
+            this.UpBtn.Size = new System.Drawing.Size(147, 60);
             this.UpBtn.TabIndex = 0;
-            this.UpBtn.Text = "UpBtn";
+            this.UpBtn.Text = "Upload Script";
             this.UpBtn.UseVisualStyleBackColor = true;
             this.UpBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // Menu
             // 
-            this.ClientSize = new System.Drawing.Size(562, 337);
+            this.ClientSize = new System.Drawing.Size(642, 374);
             this.Controls.Add(this.UpBtn);
             this.Name = "Menu";
+            this.Text = "EMSCRIPT";
             this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
 
